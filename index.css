@@ -6,6 +6,7 @@ body{
     background-image: url("images/letnik.webp");
     background-color: aquamarine;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .box {
@@ -37,4 +38,18 @@ body{
 .info-icons2 {
     content: url("icons/balloons-100.png");
     margin-left: 15px;
+}
+
+@media (max-width: 420px) {
+    body {
+        /*background-size: 100%;*/
+    }
+    .info-icons1, .info-icons2 {
+        margin-top: 40px;
+        width: 22%;
+        height: 22%;
+    }
+    .info h1{
+        text-align: center;
+    }
 }
