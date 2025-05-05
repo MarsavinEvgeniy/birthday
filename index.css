@@ -7,6 +7,7 @@ body{
     background-color: aquamarine;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .box {
@@ -18,7 +19,6 @@ body{
     grid-template-rows: auto;
     grid-template-areas:
     ". header .";
-    width: 100%;
 }
 
 .info{
@@ -41,15 +41,18 @@ body{
 }
 
 @media (max-width: 420px) {
-    body {
-        /*background-size: 100%;*/
+
+    .info{
+        margin-left: 20px;
     }
+
     .info-icons1, .info-icons2 {
-        margin-top: 40px;
+        /*margin-top: 40px;*/
         width: 22%;
         height: 22%;
     }
     .info h1{
         text-align: center;
+        font-size: 18px;
     }
 }
