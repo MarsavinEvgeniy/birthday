@@ -1,0 +1,38 @@
+html, body {
+    font-family: "Roboto Light", Arial, sans-serif, serif;
+}
+
+body{
+    background-image: url("/images/letnik.webp");
+    background-color: aquamarine;
+    background-size: cover;
+}
+
+.box {
+    display: grid;
+    margin-top: 40px;
+    gap: 10px;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". header .";
+    width: 100%;
+}
+
+.info{
+    grid-area: header;
+
+    background: rgba(6, 60, 149, 0.9);
+    color: white;
+    border-radius: 10px;
+}
+
+.info-icons1 {
+    content: url("/icons/balloons-100.png");
+    margin-right: 15px;
+    margin-bottom: -30px;
+}
+.info-icons2 {
+    content: url("/icons/balloons-100.png");
+    margin-left: 15px;
+}
