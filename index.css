@@ -3,7 +3,7 @@ html, body {
 }
 
 body{
-    background-image: url("images/letnik.webp");
+    background-image: url("/images/letnik.webp");
     background-color: aquamarine;
     background-size: cover;
 }
@@ -31,10 +31,10 @@ body{
 }
 
 .info-icons1 {
-    content: url("icons/balloons-100.png");
+    content: url("/icons/balloons-100.png");
     margin-right: 15px;
 }
 .info-icons2 {
-    content: url("icons/balloons-100.png");
+    content: url("/icons/balloons-100.png");
     margin-left: 15px;
 }
