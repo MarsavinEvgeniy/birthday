@@ -28,16 +28,24 @@ body{
     justify-content: center;
     background: rgba(6, 60, 149, 0.9);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.info h1{
+    margin-top: 70px;
 }
 
 .info-icons1 {
-    content: url("icons/balloons-100.png");
+    content: url("images/kesha.png");
     margin-right: 15px;
+    width: 130px;
+    height: 130px;
 }
 .info-icons2 {
-    content: url("icons/balloons-100.png");
+    content: url("images/tushka.png");
     margin-left: 15px;
+    width: 130px;
+    height: 130px;
 }
 
 @media (max-width: 420px) {
@@ -46,8 +54,11 @@ body{
         margin-left: 20px;
     }
 
+    .info h1{
+        margin-top: 40px;
+    }
+
     .info-icons1, .info-icons2 {
-        /*margin-top: 40px;*/
         width: 22%;
         height: 22%;
     }
