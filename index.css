@@ -21,7 +21,7 @@ body{
     ". header .";
 }
 
-.info{
+.invitation{
     grid-area: header;
     display: flex;
     flex-direction: row;
@@ -31,38 +31,45 @@ body{
     border-radius: 20px;
 }
 
-.info h1{
+.invitation h1{
     margin-top: 70px;
 }
 
-.info-icons1 {
+.invitation-icons1 {
     content: url("images/kesha.png");
     margin-right: 15px;
     width: 130px;
-    height: 130px;
+    height: 145px;
 }
-.info-icons2 {
+.invitation-icons2 {
     content: url("images/tushka.png");
     margin-left: 15px;
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
 }
 
 @media (max-width: 420px) {
 
-    .info{
+    .invitation{
         margin-left: 20px;
     }
 
-    .info h1{
+    .invitation h1{
         margin-top: 40px;
     }
 
-    .info-icons1, .info-icons2 {
-        width: 22%;
-        height: 22%;
+    .invitation-icons1{
+        width: 24%;
+        height: 24%;
     }
-    .info h1{
+
+    .invitation-icons2 {
+        margin-top: 20px;
+        width: 26%;
+        height: 26%;
+    }
+
+    .invitation h1{
         text-align: center;
         font-size: 18px;
     }
