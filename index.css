@@ -89,15 +89,39 @@ body{
     height: 145px;
     opacity: 0.9;
 }
+.invitation-icons5 {
+    content: url("images/sanya.png");
+    border-radius: 20px;
+    width: 145px;
+    height: 145px;
+    opacity: 0.9;
+}
+.invitation-icons6 {
+    content: url("images/sonya.png");
+    border-radius: 20px;
+    width: 135px;
+    height: 145px;
+    opacity: 0.9;
+    margin-right: 20px;
+}
+.invitation-icons7 {
+    content: url("images/valya.png");
+    border-radius: 20px;
+    margin-right: 18px;
+    width: 225px;
+    height: 155px;
+    opacity: 0.9;
+}
 .invitation-icons4 {
     content: url("images/cipa.png");
     border-radius: 20px;
     margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
     width: 145px;
     height: 130px;
     opacity: 0.9;
 }
-
 .mainBox {
     grid-area: main;
     flex-direction: row;
@@ -154,6 +178,7 @@ body{
     }
     .invitation-icons4 {
         margin-left: 10px;
+        margin-right: 5px;
     }
     .header-container{
         width: 70%;
@@ -170,5 +195,8 @@ body{
     }
     footer {
         margin-top: -10px;
+    }
+    .invitation-icons5, .invitation-icons6, .invitation-icons7{
+        display: none;
     }
 }
