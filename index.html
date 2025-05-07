@@ -14,8 +14,9 @@
                 <h1>Приглашение на День Рождения!</h1>
                 <p class="invitation-icons2"></p>
             </div>
-            <div>
-                <p class=""></p>
+            <div class="invitation">
+                <p class="invitation-icons3"></p>
+                <p class="invitation-icons4"></p>
             </div>
         </header>
         <main>
@@ -25,5 +26,41 @@
 
         </footer>
     </div>
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const star = document.createElement('div');
+            star.className = 'star';
+
+            // Позиционируем звезду
+            star.style.left = e.clientX + 'px';
+            star.style.top = e.clientY + 'px';
+
+            // Случайный размер и цвет
+            const size = Math.random() * 6 + 2;
+            star.style.width = size + 'px';
+            star.style.height = size + 'px';
+
+            // Случайный цвет (можно заменить на золотистый или другой)
+            const colors = ['#fff', '#ff0', '#f0f', '#0ff'];
+            star.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+            document.body.appendChild(star);
+
+            // Анимация появления
+            setTimeout(() => {
+                star.style.opacity = '0.8';
+            }, 10);
+
+            // Анимация исчезновения и удаление элемента
+            setTimeout(() => {
+                star.style.opacity = '0';
+                star.style.transform = 'translate(-50%, -50%) scale(2)';
+
+                setTimeout(() => {
+                    star.remove();
+                }, 300);
+            }, 1000);
+        });
+    </script>
 </body>
 </html>

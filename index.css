@@ -10,6 +10,18 @@ body{
     background-attachment: scroll;
 }
 
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
 .box {
     display: grid;
     justify-content: center;
@@ -37,19 +49,35 @@ body{
 
 .invitation-icons1 {
     content: url("images/kesha.png");
+    border-radius: 20px;
     margin-right: 15px;
     width: 130px;
     height: 145px;
+    opacity: 0.9;
 }
 .invitation-icons2 {
     content: url("images/tushka.png");
+    border-radius: 20px;
     margin-left: 15px;
     width: 140px;
     height: 140px;
+    opacity: 0.9;
+}
+.invitation-icons3 {
+    content: url("images/lis.png");
+    border-radius: 20px;
+    width: 145px;
+    height: 145px;
+}
+.invitation-icons4 {
+    content: url("images/cipa.png");
+    border-radius: 20px;
+    margin-left: 65px;
+    width: 145px;
+    height: 130px;
 }
 
 @media (max-width: 420px) {
-
     .invitation{
         margin-left: 20px;
     }
