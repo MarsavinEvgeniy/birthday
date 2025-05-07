@@ -87,6 +87,7 @@ body{
     margin-right: 40px;
     width: 145px;
     height: 145px;
+    opacity: 0.9;
 }
 .invitation-icons4 {
     content: url("images/cipa.png");
@@ -94,6 +95,7 @@ body{
     margin-left: 40px;
     width: 145px;
     height: 130px;
+    opacity: 0.9;
 }
 
 .mainBox {
